@@ -18,3 +18,7 @@ Internamente, Git representa los cambios usando un sistema de objetos inmutables
 4. ¿Cómo se crea un commit y qué información almacena un objeto commit?
 
 Para crear un commit, primero editas archivos en el Working Directory. Luego seleccionas los cambios con git add, que los lleva al Staging Area. Finalmente, al ejecutar git commit, Git crea un objeto commit que apunta al tree actual y almacena el hash del commit padre (o padres si es un merge), el hash del tree, los datos del autor y committer (nombre, correo, fecha) y el mensaje del commit que describe los cambios.
+
+5. ¿Cuál es la diferencia entre git pull y git fetch?
+
+La diferencia entre git pull y git fetch es que git fetch descarga commits, ramas y objetos del repositorio remoto pero no los fusiona con tu rama actual, mientras que git pull realiza un fetch y, además, intenta fusionar o rebasear esos cambios con tu rama actual. En otras palabras, fetch trae las novedades sin aplicarlas y pull trae las novedades y las integra de inmediato en tu trabajo.
