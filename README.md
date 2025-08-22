@@ -107,15 +107,15 @@ Java está basado principalmente en este paradigma, lo que facilita la reutiliza
 | Polimorfismo    | Un mismo método puede comportarse de manera distinta según el objeto.   |
 
 20. ***¿Qué es la herencia en POO y cómo se utiliza en Java?***
-
-<class Persona {>
-    <String nombre;>
-    <void saludar() { System.out.println("Hola!"); }>
-<}>
-<class Estudiante extends Persona {>
-    <int matricula;>
-<}>
-
+``` 
+class Persona {
+    String nombre;
+    void saludar() { System.out.println("Hola!"); }
+}
+class Estudiante extends Persona {
+    int matricula;
+    }
+``` 
 21. ***¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?***
 
 | Modificador             | Misma clase | Mismo paquete | Subclases | Otro paquete |
