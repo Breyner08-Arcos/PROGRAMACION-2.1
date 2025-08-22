@@ -60,3 +60,83 @@ En Git, los remotos son referencias a repositorios externos. Por convención, or
 Puedes inspeccionar el historial de commits con **git log**, que muestra la lista de commits en orden cronológico inverso. Con **git dif** puedes comparar los cambios entre commits, ramas o con el directorio de trabajo. Finalmente, **git show** permite ver la información detallada de un commit específico, incluyendo su mensaje y las modificaciones en los archivos.
 
 ## Programación
+
+15. ***¿Cuáles son los tipos de datos primitivos en Java?***
+
+| Tipo    | Tamaño (bits) | Valor mínimo               | Valor máximo              | Ejemplo              |
+| ------- | ------------- | -------------------------- | ------------------------- | -------------------- |
+| byte    | 8             | -128                       | 127                       | `byte b=10;`         |
+| short   | 16            | -32,768                    | 32,767                    | `short s=200;`       |
+| int     | 32            | -2,147,483,648             | 2,147,483,647             | `int x=1000;`        |
+| long    | 64            | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | `long l=100000L;`    |
+| float   | 32            | ±3.4e-38                   | ±3.4e38                   | `float f=5.7f;`      |
+| double  | 64            | ±1.7e-308                  | ±1.7e308                  | `double d=19.99;`    |
+| char    | 16            | ‘\u0000’ (0)               | ‘\uffff’ (65,535)         | `char c='A';`        |
+| boolean | 1 (teórico)   | true / false               | true / false              | `boolean flag=true;` |
+
+
+16. ***¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java? ***
+
+| Estructura | Uso                                                      | Ejemplo                            |
+| ---------- | -------------------------------------------------------- | ---------------------------------- |
+| if/else    | Ejecuta un bloque si condición es verdadera, otro si no. | `if(x>0){...} else {...}`          |
+| switch     | Evalúa una variable contra múltiples casos.              | `switch(op){ case 1: ... break; }` |
+| for        | Repite un bloque con un contador.                        | `for(int i=0; i<10; i++){...}`     |
+| while      | Repite mientras la condición sea verdadera.              | `while(x<5){...}`                  |
+| do-while   | Ejecuta al menos una vez, luego evalúa condición.        | `do {...} while(x<5);`             |
+
+17. ***¿Por qué es importante usar nombres significativos para variables y métodos?***
+
+Porque mejora la legibilidad y mantenibilidad del código.
+
+- ❌ int a;
+- ✅ int edadUsuario;
+
+18. ***¿Qué es la Programación Orientada a Objetos (POO)?***
+
+Es un paradigma que organiza el software en objetos que representan entidades con atributos (propiedades) y métodos (acciones).
+Java está basado principalmente en este paradigma, lo que facilita la reutilización y modularidad.
+
+19. ***¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?***
+
+| Pilar           | Descripción                                                             |
+| --------------- | ----------------------------------------------------------------------- |
+| Encapsulamiento | Ocultar los detalles internos de un objeto y exponer solo lo necesario. |
+| Abstracción     | Definir lo esencial sin mostrar la implementación.                      |
+| Herencia        | Permite crear clases nuevas a partir de otras, reutilizando código.     |
+| Polimorfismo    | Un mismo método puede comportarse de manera distinta según el objeto.   |
+
+20. ***¿Qué es la herencia en POO y cómo se utiliza en Java?***
+
+<class Persona {>
+    <String nombre;>
+    <void saludar() { System.out.println("Hola!"); }>
+<}>
+<class Estudiante extends Persona {>
+    <int matricula;>
+<}>
+
+21. ***¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?***
+
+| Modificador             | Misma clase | Mismo paquete | Subclases | Otro paquete |
+| ----------------------- | ----------- | ------------- | --------- | ------------ |
+| `public`                | ✅           | ✅             | ✅         | ✅            |
+| `protected`             | ✅           | ✅             | ✅         | ❌            |
+| *default* (sin palabra) | ✅           | ✅             | ❌         | ❌            |
+| `private`               | ✅           | ❌             | ❌         | ❌            |
+
+22. ***¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?***
+
+Una variable de entorno es un valor definido en el sistema operativo que afecta cómo se ejecutan los programas.
+En Java, variables como **JAVA_HOME** o **PATH** son cruciales para indicar dónde está instalado el JDK y permitir que funcionen los comandos (javac, java).
+Son importantes porque:
+
+- Evitan poner configuraciones fijas en el código.
+
+- Permiten portabilidad entre diferentes entornos.
+
+- Facilitan despliegues en desarrollo, pruebas y producción.
+
+
+📌 Autor: Breyner Arcos
+📂 Repositorio: Programacion-2.1
