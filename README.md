@@ -25,3 +25,29 @@ La diferencia entre git pull y git fetch es que git fetch descarga commits, rama
 
 6. **¿Qué es un branch (rama) en Git y cómo Git gestiona los punteros a commits?**
 Un branch en Git es una línea de desarrollo independiente que permite trabajar en nuevas características, correcciones o pruebas sin afectar la rama principal. Internamente, Git gestiona las ramas como punteros que apuntan a un commit específico dentro del historial. Cada vez que realizas un nuevo commit en una rama, el puntero se mueve automáticamente hacia el commit más reciente.
+
+7. **¿Cómo se realiza un merge y qué conflictos pueden surgir? ¿Cómo se resuelven?**
+Un merge en Git se realiza cuando se quiere combinar el trabajo de una rama con otra. Esto se hace con el comando git merge nombre_rama. Los conflictos surgen cuando dos ramas modifican las mismas líneas de un archivo o cambian un mismo recurso de manera incompatible. Para resolverlos, se deben editar manualmente los archivos en conflicto, elegir qué cambios conservar o combinarlos, y luego hacer un commit que registre la resolución.
+
+8. **¿Cómo funciona el área de staging (git add) y qué pasa si omito este paso?**
+El área de staging (o index) es una zona intermedia donde se preparan los archivos antes de hacer un commit. Cuando usas git add, le indicas a Git qué cambios quieres incluir en el siguiente commit. Si omites este paso, los cambios no se registrarán en el commit y quedarán solo en tu directorio de trabajo, sin formar parte del historial.
+
+9. **¿Qué es el archivo .gitignore y cómo influye en el seguimiento de archivos?**
+El archivo .gitignore es una lista de patrones que le indica a Git qué archivos o carpetas debe ignorar. Esto se usa para evitar que archivos temporales, de configuración local o de dependencias se agreguen al repositorio. De esta forma, se mantiene limpio el historial y se evita compartir información innecesaria o sensible.
+
+10. **¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?**
+El comando git commit --amend modifica el último commit realizado, permitiendo corregir su mensaje o incluir cambios que se olvidaron. En cambio, un nuevo commit crea un registro adicional en la historia del repositorio. La diferencia clave es que --amend reemplaza el commit anterior, mientras que un commit nuevo lo añade al historial.
+
+11. **¿Cómo se utiliza git stash y en qué escenarios es útil?**
+El comando git stash guarda temporalmente los cambios no confirmados y devuelve el directorio de trabajo al último commit limpio. Es útil cuando necesitas cambiar de rama rápidamente o actualizar tu proyecto, pero no quieres perder tu trabajo en progreso. Luego puedes recuperar esos cambios con git stash pop o revisarlos con git stash list.
+
+12. **¿Qué mecanismos ofrece Git para deshacer cambios (por ejemplo, git reset, git revert, git checkout)?**
+Git ofrece varios mecanismos para deshacer cambios. git reset mueve el puntero de la rama a un commit anterior y puede modificar el área de staging y el directorio de trabajo. git revert crea un nuevo commit que deshace los cambios de un commit específico sin alterar el historial. git checkout se usa para descartar cambios en archivos individuales o para moverse entre ramas y commits.
+
+13. **¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?**
+En Git, los remotos son referencias a repositorios externos. Por convención, origin se refiere al repositorio principal desde el que clonaste, mientras que upstream suele usarse para el repositorio original del cual tu proyecto es un fork. Para gestionar forks, normalmente configuras ambos remotos: git remote add upstream URL para el original y git remote -v para verificar. Luego puedes usar git fetch upstream y git merge upstream/main para mantener actualizado tu fork.
+
+14. **¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?**
+Puedes inspeccionar el historial de commits con git log, que muestra la lista de commits en orden cronológico inverso. Con git diff puedes comparar los cambios entre commits, ramas o con el directorio de trabajo. Finalmente, git show permite ver la información detallada de un commit específico, incluyendo su mensaje y las modificaciones en los archivos.
+
+## Programación
