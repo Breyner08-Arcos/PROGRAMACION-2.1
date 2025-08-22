@@ -63,19 +63,19 @@ Puedes inspeccionar el historial de commits con **git log**, que muestra la list
 
 15. ***¿Cuáles son los tipos de datos primitivos en Java?***
 
-| Tipo    | Tamaño (bits) | Valor mínimo               | Valor máximo              | Ejemplo              |
-| ------- | ------------- | -------------------------- | ------------------------- | -------------------- |
-| byte    | 8             | -128                       | 127                       | `byte b=10;`         |
-| short   | 16            | -32,768                    | 32,767                    | `short s=200;`       |
-| int     | 32            | -2,147,483,648             | 2,147,483,647             | `int x=1000;`        |
-| long    | 64            | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 | `long l=100000L;`    |
-| float   | 32            | ±3.4e-38                   | ±3.4e38                   | `float f=5.7f;`      |
-| double  | 64            | ±1.7e-308                  | ±1.7e308                  | `double d=19.99;`    |
-| char    | 16            | ‘\u0000’ (0)               | ‘\uffff’ (65,535)         | `char c='A';`        |
-| boolean | 1 (teórico)   | true / false               | true / false              | `boolean flag=true;` |
+| Tipo    | Tamaño (bits) | Ejemplo              |
+| ------- | ------------- | -------------------- |
+| byte    | 8             | `byte b=10;`         |
+| short   | 16            | `short s=200;`       |
+| int     | 32            | `int x=1000;`        |
+| long    | 64            | `long l=100000L;`    |
+| float   | 32            | `float f=5.7f;`      |
+| double  | 64            | `double d=19.99;`    |
+| char    | 16            | `char c='A';`        |
+| boolean | 1 (teórico)   | `boolean flag=true;` |
 
 
-16. ***¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java? ***
+16. ***¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?***
 
 | Estructura | Uso                                                      | Ejemplo                            |
 | ---------- | -------------------------------------------------------- | ---------------------------------- |
